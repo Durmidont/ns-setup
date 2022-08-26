@@ -38,7 +38,7 @@ echo Введите API-серкет
 read secret
 echo "NS_SECRET=$secret" >> .env
 
-curl https://raw.githubusercontent.com/justmara/ns-setup/main/docker-compose.yml --output docker-compose.yml
+curl https://raw.githubusercontent.com/durmidont/ns-setup/main/docker-compose.yml --output docker-compose.yml
 
 sudo docker compose up -d
 
