@@ -34,7 +34,8 @@ read domain
 echo "NS_DOMAIN=$domain" >> .env
 echo
 
-secret=$(cat /proc/sys/kernel/random/uuid)
+echo Введите API-серкет
+read secret
 echo "NS_SECRET=$secret" >> .env
 
 curl https://raw.githubusercontent.com/justmara/ns-setup/main/docker-compose.yml --output docker-compose.yml
